@@ -1,0 +1,20 @@
+{
+  "name": "daily-horoscope-messages",
+  "version": "1.0.0",
+  "description": "A webpage that provides daily horoscopes for all twelve zodiac signs with offline access",
+  "main": "app.js",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "http-server"
+  },
+  "keywords": [
+    "horoscope",
+    "zodiac",
+    "astrology",
+    "daily",
+    "api"
+  ],
+  "author": "SwaroopMR",
+  "license": "MIT",
+  "devDependencies": {}
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Horoscope Messages</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>✨ Daily Horoscope Messages ✨</h1>
+            <p class="subtitle">Discover your daily cosmic guidance</p>
+        </header>
+
+        <div class="controls">
+            <button id="fetchBtn" class="btn btn-primary">Fetch Today's Horoscopes</button>
+            <button id="clearBtn" class="btn btn-secondary">Clear Cache</button>
+            <span id="lastUpdated" class="last-updated"></span>
+        </div>
+
+        <div class="zodiac-grid">
+            <!-- Zodiac cards will be generated here by JavaScript -->
+        </div>
+
+        <div id="loading" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading horoscopes...</p>
+        </div>
+
+        <div id="error" class="error" style="display: none;"></div>
+    </div>
+
+    <script src="zodiac-data.js"></script>
+    <script src="storage-manager.js"></script>
+    <script src="api-service.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
